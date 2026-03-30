@@ -11,6 +11,7 @@ package vit.devops.macse639.ticketreservationsystem;
 public class TicketReservationSystem {
 
     public static void main(String[] args) {
+        System.out.println("App started...");
         Passenger p = new Passenger("Rahul", 21, "Chennai");
 
         p.searchTrains();
