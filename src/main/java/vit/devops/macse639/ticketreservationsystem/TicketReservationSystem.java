@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package vit.devops.macse639.tickectreservationsystem;
+package vit.devops.macse639.ticketreservationsystem;
 
 /**
  *
  * @author rahul
  */
-public class TickectReservationSystem {
+public class TicketReservationSystem {
 
     public static void main(String[] args) {
         Passenger p = new Passenger("Rahul", 21, "Chennai");
@@ -22,7 +22,14 @@ public class TickectReservationSystem {
         p.makePayment(payment);
 
         p.purchaseTicket(t);
+        Train train = new Train("Express", 123);
+        train.displayTrain();
 
+        TicketClerk clerk = new TicketClerk("John", "Station A");
+        clerk.reserveTicket();
+
+        RailwayDatabase db = new RailwayDatabase(1, "Success");
+        db.showData();
         
     }
 }
