@@ -18,6 +18,14 @@ public class Passenger {
         this.age = age;
         this.address = address;
     }
+    
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
 
     public void searchTrains() {
         System.out.println("Searching available trains...");
